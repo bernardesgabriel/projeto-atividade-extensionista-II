@@ -1,0 +1,11 @@
+# Godot cache
+.godot/
+*.import
+*.translation
+
+# Export
+export/
+
+# Sistema
+.DS_Store
+Thumbs.db
