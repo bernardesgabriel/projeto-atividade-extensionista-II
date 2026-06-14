@@ -1,0 +1,222 @@
+{
+  "escritorio_alarme": [
+	{
+	  "speaker": "SISTEMA:",
+	  "text": "ALERTA CRÍTICO — Vazamento detectado no módulo de geração de energia limpa. Nível de risco: ALTO.",
+	  "portrait": null
+	},
+	{
+	  "speaker": "PESQUISADOR:",
+	  "text": "...Isso não é bom. Preciso falar com a especialista.",
+	  "portrait": null
+	}
+  ],
+
+  "recepcao_conversa": [
+	{
+	  "speaker": "ESPECIALISTA:",
+	  "text": "O sistema indicou uma falha crítica no módulo de contenção do cristal líquido de energia limpa.",
+	  "portrait": null
+	},
+	{
+	  "speaker": "PESQUISADOR:",
+	  "text": "Então se não for corrigido em tempo, perdemos toda a pesquisa. Como podemos corrigir o problema?",
+	  "portrait": null
+	},
+	{
+	  "speaker": "ESPECIALISTA:",
+	  "text": "Primeiro precisamos detectar e parar o vazamento. A ferramenta para te auxiliar estará no depósito.",
+	  "portrait": null
+	},
+	{
+	  "speaker": "ESPECIALISTA:",
+	  "text": "Depois precisamos verificar se a máquina de tubos triplo está com todos os tubos cheios, se não tiver pegue um tubo verde grande no depósito.",
+	  "portrait": null
+	},
+	{
+	  "speaker": "ESPECIALISTA:",
+	  "text": "Por último, o computador NEUROCORE precisa ser reiniciado. O painel vai indicar a ordem correta — fique atento.",
+	  "portrait": null
+	},
+	{
+	  "speaker": "ESPECIALISTA:",
+	  "text": "O sistema está indicando que o cristal líquido vai entrar em colapso em 7 minutos, vou cortar as comunicações para conseguir 3 minutos a mais. Depois disso se tornará instável e a pesquisa será perdida.",
+	  "portrait": null
+	},
+	{
+	  "speaker": "ESPECIALISTA:",
+	  "text": "Eu preciso ficar aqui para cortar as comunicações. Quando você sair, vou trancar a porta e sem as comunicações não vai ter como me contatar depois.",
+	  "portrait": null
+	},
+	{
+	  "speaker": "PESQUISADOR:",
+	  "text": "Espera — sem comunicação? Mas são muitas informações...",
+	  "portrait": null
+	},
+	{
+	  "speaker": "ESPECIALISTA:",
+	  "text": "Pegue esse bloco de notas, use para anotar o que achar necessário, se precisar posso repetir as instruções antes de você sair, é só perguntar.",
+	  "portrait": null
+	},
+	{
+	  "speaker": "PESQUISADOR:",
+	  "text": "Certo. Então para anotar basta clicar no ícone de bloco de notas...",
+	  "portrait": null
+	}
+  ],
+
+  "npc_dicas": [
+	{
+	  "speaker": "ESPECIALISTA:",
+	  "text": "Você precisa concertar o vazamento, depois verifica se precisa de um tubo de cristal líquido da cor verde, tamanho grande. Por fim a sequência do painel do NEUROCORE o sistema mostra.",
+	  "portrait": null
+	},
+	{
+	  "speaker": "ESPECIALISTA:",
+	  "text": " Use o bloco para anotar, vai facilitar a sua vida e quando você sair da sala não poderei mais ajudar.",
+	  "portrait": null
+	}
+  ],
+
+"corridor_main_blocked": [
+	{
+	  "speaker": "PESQUISADOR:",
+	  "text": "A porta está trancada, a especialista me avisou que trancaria por segurança.",
+	  "portrait": null
+	}
+  ],
+
+"corridor_exit_blocked": [
+	{
+	  "speaker": "PESQUISADOR:",
+	  "text": "Nao posso ir embora agora. Preciso resolver o problema primeiro.",
+	  "portrait": null
+	}
+  ],
+
+"lab_entrance": [
+	{
+	  "speaker": "PESQUISADOR:",
+	  "text": "O vazamento está comprometendo todo o sistema. Preciso consertar isso primeiro.",
+	  "portrait": null
+	}
+  ],
+
+"lab_click_leak": [
+	{
+	  "speaker": "PESQUISADOR:",
+	  "text": "Tem um vazamento aqui. Preciso de uma ferramenta para consertar...",
+	  "portrait": null
+	}
+  ],
+
+"lab_click_leak_fixed": [
+	{
+	  "speaker": "PESQUISADOR:",
+	  "text": "Consertado. Agora preciso verificar os tubos na máquina.",
+	  "portrait": null
+	}
+  ],
+
+"lab_click_machine_no_tube": [
+	{
+	  "speaker": "Tecnico",
+	  "text": "A máquina está com um tubo vazio, preciso de um tubo...",
+	  "portrait": null
+	}
+  ],
+
+"lab_click_machine_ready": [
+	{
+	  "speaker": "PESQUISADOR:",
+	  "text": "Tubo inserido. Agora é só reiniciar o computador para transferir o conteúdo e estabilizar o cristal líquido.",
+	  "portrait": null
+	}
+  ],
+
+"lab_pc_leak_not_fixed": [
+	{
+	  "speaker": "Tecnico",
+	  "text": "Não consigo ligar o sistema com esse vazamento. Preciso consertar primeiro.",
+	  "portrait": null
+	}
+  ],
+
+"lab_pc_no_tube": [
+	{
+	  "speaker": "Tecnico",
+	  "text": "Preciso inserir o tubo na máquina antes de transferir o conteúdo.",
+	  "portrait": null
+	}
+  ],
+
+"lab_success": [
+	{
+	  "speaker": "SISTEMA:",
+	  "text": "Transferência concluída. Cristal de energia estabilizado.",
+	  "portrait": null
+	},
+	{
+	  "speaker": "PESQUISADOR:",
+	  "text": "Conseguimos. A pesquisa e o laboratório estão seguros... Ótimo trabalho!",
+	  "portrait": null
+	}
+  ],
+
+"deposit_wrench_collected": [
+	{
+	  "speaker": "PESQUISADOR:",
+	  "text": "Uma chave inglesa servirá muito bem para concertar o conector vazando.",
+	  "portrait": null
+	},
+  ],
+
+"deposit_tube_collected": [
+	{
+	  "speaker": "PESQUISADOR:",
+	  "text": "Um tubo verde grande. Exatamente esse que eu preciso.",
+	  "portrait": null
+	},
+  ],
+
+"deposit_wrong_tube_small": [
+	{
+	  "speaker": "PESQUISADOR:",
+	  "text": "Esse tubo é pequeno demais. Preciso de um maior.",
+	  "portrait": null
+	},
+  ],
+
+"deposit_wrong_tube_color": [
+	{
+	  "speaker": "PESQUISADOR:",
+	  "text": "A cor que a especialista falou não era essa.",
+	  "portrait": null
+	},
+  ],
+
+"deposit_wrong_tool_hammer": [
+	{
+	  "speaker": "PESQUISADOR:",
+	  "text": "Martelo não vai funcionar para apertar um conector. Preciso de outra ferramenta.",
+	  "portrait": null
+	},
+  ],
+
+"deposit_wrong_tool_saw": [
+	{
+	  "speaker": "PESQUISADOR:",
+	  "text": "Serrote? Definitivamente não é isso. Preciso de outra ferramenta.",
+	  "portrait": null
+	},
+  ],
+
+"deposit_wrong_tool_axe": [
+	{
+	  "speaker": "PESQUISADOR:",
+	  "text": "O Machado não é uma boa opção. Preciso de outra ferramenta.",
+	  "portrait": null
+	},
+  ]
+
+}

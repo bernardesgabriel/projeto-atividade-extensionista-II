@@ -1,0 +1,243 @@
+[gd_scene format=3 uid="uid://dlhnm55axh4oa"]
+
+[ext_resource type="Texture2D" uid="uid://c1ngqy2nbris2" path="res://assets/backgrounds/Laboratorio.png" id="1_vs4bd"]
+[ext_resource type="Script" uid="uid://b6is13tcioq35" path="res://scripts/door.gd" id="2_8qifd"]
+[ext_resource type="Texture2D" uid="uid://cndsx08fve6up" path="res://assets/backgrounds/Lab-fixed.png" id="2_y04jm"]
+[ext_resource type="Texture2D" uid="uid://cioupdf4t2dms" path="res://assets/backgrounds/lab-mach-full.png" id="3_xmb10"]
+[ext_resource type="Script" uid="uid://b8irh5m6hq6ps" path="res://scripts/player.gd" id="3_y04jm"]
+[ext_resource type="Texture2D" uid="uid://bp63bw0opxk80" path="res://assets/characters/player/M_3_idle_0.png" id="4_xmb10"]
+[ext_resource type="Texture2D" uid="uid://bku15bm30oaqc" path="res://assets/characters/player/M_3_idle_1.png" id="5_0yu7s"]
+[ext_resource type="Texture2D" uid="uid://br3qn10clhy73" path="res://assets/characters/player/M_3_idle_2.png" id="6_ex86j"]
+[ext_resource type="Texture2D" uid="uid://bhry24jnpv02j" path="res://assets/characters/player/M_3_idle_3.png" id="7_f8feu"]
+[ext_resource type="Texture2D" uid="uid://bfqms6rwh12yy" path="res://assets/characters/player/M_3_idle_4.png" id="8_e20ri"]
+[ext_resource type="Texture2D" uid="uid://cil4frg7n0tb7" path="res://assets/characters/player/M_3_idle_5.png" id="9_yw80d"]
+[ext_resource type="Texture2D" uid="uid://cgtva4rdgkqg3" path="res://assets/characters/player/M_3_idle_6.png" id="10_xyty2"]
+[ext_resource type="Texture2D" uid="uid://c1yyjyw2yr4yh" path="res://assets/characters/player/M_3_idle_7.png" id="11_5t8lp"]
+[ext_resource type="Texture2D" uid="uid://b0h122j2a32a5" path="res://assets/characters/player/M_3_pickup_wall_0.png" id="12_t4khb"]
+[ext_resource type="Texture2D" uid="uid://dqmb5673qg6u6" path="res://assets/characters/player/M_3_pickup_wall_1.png" id="13_l0u6j"]
+[ext_resource type="Texture2D" uid="uid://ft37t1a68au4" path="res://assets/characters/player/M_3_pickup_wall_2.png" id="14_olj4x"]
+[ext_resource type="Texture2D" uid="uid://dvr3scibf3u5w" path="res://assets/characters/player/M_3_pickup_wall_3.png" id="15_vudat"]
+[ext_resource type="Texture2D" uid="uid://cqaj550h7e5k3" path="res://assets/characters/player/M_3_pickup_wall_4.png" id="16_g5our"]
+[ext_resource type="Texture2D" uid="uid://dxrnbafi662sr" path="res://assets/characters/player/M_3_pickup_wall_5.png" id="17_vnlma"]
+[ext_resource type="Texture2D" uid="uid://cjgtahsbtnnc" path="res://assets/characters/player/M_3_pickup_wall_6.png" id="18_mfdxg"]
+[ext_resource type="Texture2D" uid="uid://eaudc7l2udod" path="res://assets/characters/player/M_3_pickup_wall_7.png" id="19_8dq4q"]
+[ext_resource type="Texture2D" uid="uid://bkh50kr4qvlgf" path="res://assets/characters/player/M_3_pickup_wall_8.png" id="20_mxf2d"]
+[ext_resource type="Texture2D" uid="uid://dhwpm2lque7kf" path="res://assets/characters/player/M_3_pickup_wall_9.png" id="21_ais8c"]
+[ext_resource type="Texture2D" uid="uid://bheu3mr3jvpeg" path="res://assets/characters/player/M_3_talk_0.png" id="22_v2js0"]
+[ext_resource type="Texture2D" uid="uid://dxycley7kr00v" path="res://assets/characters/player/M_3_talk_1.png" id="23_q2wib"]
+[ext_resource type="Texture2D" uid="uid://c73xa62jmlng3" path="res://assets/characters/player/M_3_talk_2.png" id="24_x8jcs"]
+[ext_resource type="Texture2D" uid="uid://bhd3pdye0m34l" path="res://assets/characters/player/M_3_talk_3.png" id="25_oravh"]
+[ext_resource type="Texture2D" uid="uid://hduyqsk3dw8r" path="res://assets/characters/player/M_3_walk_0.png" id="26_v37m8"]
+[ext_resource type="Texture2D" uid="uid://5wsrajeqbyfx" path="res://assets/characters/player/M_3_walk_1.png" id="27_4s4ja"]
+[ext_resource type="Texture2D" uid="uid://djuprpr7t5mmy" path="res://assets/characters/player/M_3_walk_2.png" id="28_ys8cn"]
+[ext_resource type="Texture2D" uid="uid://1gfq80rv33ot" path="res://assets/characters/player/M_3_walk_3.png" id="29_08u2a"]
+[ext_resource type="Texture2D" uid="uid://bp68ee5m46j7m" path="res://assets/characters/player/M_3_walk_4.png" id="30_eoe33"]
+[ext_resource type="Texture2D" uid="uid://c3rrqovlqqj22" path="res://assets/characters/player/M_3_walk_5.png" id="31_sjpdh"]
+[ext_resource type="Texture2D" uid="uid://bn4jieaqpgafi" path="res://assets/characters/player/M_3_walk_6.png" id="32_jbqp4"]
+[ext_resource type="Texture2D" uid="uid://ckfn1s6kjjohh" path="res://assets/characters/player/M_3_walk_7.png" id="33_uablx"]
+[ext_resource type="PackedScene" uid="uid://bp17h8st1nqg5" path="res://scenes/ui/dialog.tscn" id="34_y7guw"]
+[ext_resource type="PackedScene" uid="uid://dy7yikf626sbr" path="res://scenes/ui/hud.tscn" id="35_vlk4c"]
+[ext_resource type="PackedScene" uid="uid://ccgb8uoxcl1qm" path="res://scenes/ui/notebook.tscn" id="36_7wkbp"]
+[ext_resource type="Script" uid="uid://eugytkhp7c0y" path="res://scripts/lab_manager.gd" id="37_vs4bd"]
+[ext_resource type="PackedScene" uid="uid://b3u8qa65chmj3" path="res://scenes/minigames/lab_pc_puzzle.tscn" id="40_xmb10"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_en78e"]
+size = Vector2(97.5, 173.5)
+
+[sub_resource type="Animation" id="Animation_psib6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("4_xmb10")]
+}
+
+[sub_resource type="Animation" id="Animation_it6ex"]
+resource_name = "idle"
+length = 1.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("4_xmb10"), ExtResource("5_0yu7s"), ExtResource("6_ex86j"), ExtResource("7_f8feu"), ExtResource("8_e20ri"), ExtResource("9_yw80d"), ExtResource("10_xyty2"), ExtResource("11_5t8lp")]
+}
+
+[sub_resource type="Animation" id="Animation_q262g"]
+resource_name = "pickup"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("12_t4khb"), ExtResource("13_l0u6j"), ExtResource("14_olj4x"), ExtResource("15_vudat"), ExtResource("16_g5our"), ExtResource("17_vnlma"), ExtResource("18_mfdxg"), ExtResource("19_8dq4q"), ExtResource("20_mxf2d"), ExtResource("21_ais8c")]
+}
+
+[sub_resource type="Animation" id="Animation_mrkvn"]
+resource_name = "pickup_inicial"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.2, 1.4, 1.6, 1.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("15_vudat"), ExtResource("15_vudat"), ExtResource("14_olj4x"), ExtResource("13_l0u6j"), ExtResource("12_t4khb")]
+}
+
+[sub_resource type="Animation" id="Animation_fas2k"]
+resource_name = "talk"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("22_v2js0"), ExtResource("23_q2wib"), ExtResource("24_x8jcs"), ExtResource("25_oravh")]
+}
+
+[sub_resource type="Animation" id="Animation_bwisb"]
+resource_name = "walk"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("26_v37m8"), ExtResource("27_4s4ja"), ExtResource("28_ys8cn"), ExtResource("29_08u2a"), ExtResource("30_eoe33"), ExtResource("31_sjpdh"), ExtResource("32_jbqp4"), ExtResource("33_uablx")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_056ml"]
+_data = {
+&"RESET": SubResource("Animation_psib6"),
+&"idle": SubResource("Animation_it6ex"),
+&"pickup": SubResource("Animation_q262g"),
+&"pickup_inicial": SubResource("Animation_mrkvn"),
+&"talk": SubResource("Animation_fas2k"),
+&"walk": SubResource("Animation_bwisb")
+}
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pjly2"]
+height = 42.533325
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y04jm"]
+size = Vector2(73, 29)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xmb10"]
+size = Vector2(40, 60)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0yu7s"]
+size = Vector2(28, 58)
+
+[node name="Lab" type="Node2D" unique_id=1319558846]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1137718995]
+texture = ExtResource("1_vs4bd")
+centered = false
+
+[node name="LabFixed" type="Sprite2D" parent="." unique_id=2113177275]
+visible = false
+texture = ExtResource("2_y04jm")
+centered = false
+
+[node name="MachineFull" type="Sprite2D" parent="." unique_id=727188700]
+visible = false
+texture = ExtResource("3_xmb10")
+centered = false
+
+[node name="NavigationAreas" type="Node2D" parent="." unique_id=870559548]
+
+[node name="DoorCorridor" type="Area2D" parent="NavigationAreas" unique_id=1315345547]
+position = Vector2(18, 366)
+script = ExtResource("2_8qifd")
+target_scene = "res://scenes/rooms/corridor.tscn"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NavigationAreas/DoorCorridor" unique_id=748710815]
+position = Vector2(31.25, 4.75)
+shape = SubResource("RectangleShape2D_en78e")
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=2103086541]
+texture_filter = 1
+position = Vector2(80, 397)
+scale = Vector2(3, 3)
+script = ExtResource("3_y04jm")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=302350520]
+z_index = 3
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("4_xmb10")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Player" unique_id=453519728]
+libraries/ = SubResource("AnimationLibrary_056ml")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1873875489]
+z_index = 3
+shape = SubResource("CapsuleShape2D_pjly2")
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1814169791]
+
+[node name="DialogBox" parent="UI" unique_id=386614837 instance=ExtResource("34_y7guw")]
+
+[node name="HUD" parent="UI" unique_id=523628254 instance=ExtResource("35_vlk4c")]
+
+[node name="Notebook" parent="UI" unique_id=287675510 instance=ExtResource("36_7wkbp")]
+
+[node name="GameManager" type="Node" parent="." unique_id=553327000]
+script = ExtResource("37_vs4bd")
+cena_puzzle = ExtResource("40_xmb10")
+
+[node name="InteracaoComputador" type="Area2D" parent="." unique_id=1032733994]
+position = Vector2(610, 389)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteracaoComputador" unique_id=2020319361]
+position = Vector2(26.5, 4.5)
+shape = SubResource("RectangleShape2D_y04jm")
+
+[node name="InteracaoVazamento" type="Area2D" parent="." unique_id=1530849920]
+position = Vector2(912, 403)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteracaoVazamento" unique_id=558529229]
+position = Vector2(12, 20)
+shape = SubResource("RectangleShape2D_xmb10")
+
+[node name="InteracaoMaquina" type="Area2D" parent="." unique_id=213743763]
+position = Vector2(496, 373)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteracaoMaquina" unique_id=525895637]
+shape = SubResource("RectangleShape2D_0yu7s")
+
+[connection signal="input_event" from="InteracaoComputador" to="GameManager" method="_on_interacao_computador_input_event"]

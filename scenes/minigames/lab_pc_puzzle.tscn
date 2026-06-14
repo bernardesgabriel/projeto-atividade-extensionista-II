@@ -1,0 +1,262 @@
+[gd_scene format=3 uid="uid://b3u8qa65chmj3"]
+
+[ext_resource type="Texture2D" uid="uid://dfeunly5lavji" path="res://assets/puzzle/pc/monitor/3.png" id="1_kcfax"]
+[ext_resource type="Script" uid="uid://cufi6r8dshi2g" path="res://scripts/lab_pc_puzzle.gd" id="1_t10ng"]
+[ext_resource type="Texture2D" uid="uid://de7ljkhp1pp5x" path="res://assets/puzzle/pc/others/Arrows.png" id="2_m2wd7"]
+[ext_resource type="Texture2D" uid="uid://butbamuoy4eea" path="res://assets/puzzle/pc/others/botao_dir1.png" id="4_t10ng"]
+[ext_resource type="Texture2D" uid="uid://cmv0m8jvdfkwp" path="res://assets/puzzle/pc/others/botao_baixo1.png" id="5_m2wd7"]
+[ext_resource type="Texture2D" uid="uid://bn05hndhonmov" path="res://assets/puzzle/pc/others/botao_esq1.png" id="6_3oqeg"]
+[ext_resource type="Texture2D" uid="uid://bry1ufssg4165" path="res://assets/puzzle/pc/others/Loading_part.png" id="6_fknh6"]
+[ext_resource type="Texture2D" uid="uid://c4seftqyvcs8f" path="res://assets/puzzle/pc/monitor/controle.png" id="6_w8ec7"]
+[ext_resource type="Texture2D" uid="uid://ggbjiy17i7he" path="res://assets/puzzle/pc/others/Loading_part1.png" id="7_2ypqp"]
+[ext_resource type="Texture2D" uid="uid://n6ynksl7ulo1" path="res://assets/puzzle/pc/others/botao_cima1.png" id="7_orour"]
+[ext_resource type="Texture2D" uid="uid://p3j0653xhlgr" path="res://assets/puzzle/pc/monitor/BootOS.png" id="8_50ju3"]
+[ext_resource type="Texture2D" uid="uid://cjwupfv561lkr" path="res://assets/puzzle/pc/others/botao_baixo.png" id="9_ila3h"]
+[ext_resource type="Texture2D" uid="uid://l55gfpchyjgw" path="res://assets/puzzle/pc/monitor/GrantedDenied.png" id="9_obgc3"]
+[ext_resource type="Texture2D" uid="uid://d12kipd55qjrp" path="res://assets/puzzle/pc/others/botao_cima.png" id="11_fknh6"]
+[ext_resource type="Texture2D" uid="uid://bgwfybd6c6ksr" path="res://assets/puzzle/pc/others/botao_esq.png" id="13_2ypqp"]
+[ext_resource type="Texture2D" uid="uid://b7ao1pm88fxv" path="res://assets/puzzle/pc/others/botao_dir.png" id="15_q67nr"]
+[ext_resource type="PackedScene" uid="uid://bp17h8st1nqg5" path="res://scenes/ui/dialog.tscn" id="18_abqud"]
+[ext_resource type="FontFile" uid="uid://c202ch8ck8s5" path="res://assets/puzzle/pc/text/FutureMillennium.ttf" id="18_q67nr"]
+[ext_resource type="PackedScene" uid="uid://dy7yikf626sbr" path="res://scenes/ui/hud.tscn" id="19_c8mds"]
+[ext_resource type="PackedScene" uid="uid://ccgb8uoxcl1qm" path="res://scenes/ui/notebook.tscn" id="20_gli58"]
+
+[sub_resource type="Animation" id="Animation_obgc3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BootSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_2ypqp"]
+resource_name = "acesso_garantido"
+length = 2.5
+step = 0.0333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AcessoGarantidoSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8000001, 2, 2.2, 2.4, 2.6000001, 2.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+}
+
+[sub_resource type="Animation" id="Animation_t10ng"]
+resource_name = "boot"
+length = 5.6
+step = 0.0333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BootSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8000001, 2, 2.2, 2.4, 2.6000001, 2.8, 3, 3.2, 3.4, 3.6000001, 3.8, 4, 4.4, 4.6, 4.8, 5, 5.2000003, 5.4, 5.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 22, 23, 24, 25, 26, 27, 28]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_m2wd7"]
+_data = {
+&"RESET": SubResource("Animation_obgc3"),
+&"acesso_garantido": SubResource("Animation_2ypqp"),
+&"boot": SubResource("Animation_t10ng")
+}
+
+[sub_resource type="Animation" id="Animation_m2wd7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AcessoGarantidoSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_orour"]
+resource_name = "denied"
+length = 2.5
+step = 0.0333
+
+[sub_resource type="Animation" id="Animation_3oqeg"]
+resource_name = "grant"
+length = 2.5
+step = 0.0333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AcessoGarantidoSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8000001, 2, 2.2, 2.4, 2.6000001, 2.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_orour"]
+_data = {
+&"RESET": SubResource("Animation_m2wd7"),
+&"denied": SubResource("Animation_orour"),
+&"grant": SubResource("Animation_3oqeg")
+}
+
+[node name="LabPcPuzzle" type="Node2D" unique_id=82719396]
+process_mode = 3
+z_index = 4
+script = ExtResource("1_t10ng")
+spritesheet_setas = ExtResource("2_m2wd7")
+
+[node name="FundoPreto" type="ColorRect" parent="." unique_id=724101271]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 960.0
+offset_bottom = 540.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Monitor" type="Sprite2D" parent="." unique_id=2096917908]
+texture_filter = 1
+position = Vector2(0, 52)
+scale = Vector2(2, 2)
+texture = ExtResource("1_kcfax")
+centered = false
+
+[node name="BootSprite" type="Sprite2D" parent="." unique_id=1326957636]
+texture_filter = 1
+position = Vector2(80, 95)
+scale = Vector2(2, 2)
+texture = ExtResource("8_50ju3")
+centered = false
+hframes = 30
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=92833396]
+libraries/ = SubResource("AnimationLibrary_m2wd7")
+
+[node name="AcessoGarantidoSprite" type="Sprite2D" parent="." unique_id=757436914]
+texture_filter = 1
+position = Vector2(80, 95)
+scale = Vector2(2, 2)
+texture = ExtResource("9_obgc3")
+centered = false
+hframes = 30
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="." unique_id=1221022308]
+libraries/ = SubResource("AnimationLibrary_orour")
+
+[node name="SequenciaContainer" type="HBoxContainer" parent="." unique_id=420002525]
+texture_filter = 1
+custom_minimum_size = Vector2(32, 32)
+offset_left = 144.0
+offset_top = 184.0
+offset_right = 176.0
+offset_bottom = 216.0
+scale = Vector2(2, 2)
+alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="ProgressBar" type="TextureProgressBar" parent="." unique_id=59781733]
+texture_filter = 1
+texture_repeat = 2
+offset_left = 242.0
+offset_top = 304.0
+offset_right = 320.0
+offset_bottom = 316.0
+scale = Vector2(2, 2)
+texture_under = ExtResource("6_fknh6")
+texture_progress = ExtResource("7_2ypqp")
+metadata/_edit_use_anchors_ = true
+
+[node name="ControleContainer" type="Node2D" parent="." unique_id=280510750]
+position = Vector2(680, 135)
+scale = Vector2(2, 2)
+
+[node name="ControleBase" type="Sprite2D" parent="ControleContainer" unique_id=1701602644]
+texture_filter = 1
+position = Vector2(-41, 0)
+texture = ExtResource("6_w8ec7")
+centered = false
+
+[node name="BtnDown" type="TextureButton" parent="ControleContainer/ControleBase" unique_id=1036024332]
+texture_filter = 1
+offset_left = 80.0
+offset_top = 81.0
+offset_right = 112.0
+offset_bottom = 117.0
+texture_normal = ExtResource("5_m2wd7")
+texture_pressed = ExtResource("9_ila3h")
+metadata/_edit_use_anchors_ = true
+
+[node name="BtnUp" type="TextureButton" parent="ControleContainer/ControleBase" unique_id=2106230385]
+texture_filter = 1
+offset_left = 78.0
+offset_top = 31.0
+offset_right = 118.0
+offset_bottom = 71.0
+texture_normal = ExtResource("7_orour")
+texture_pressed = ExtResource("11_fknh6")
+metadata/_edit_use_anchors_ = true
+
+[node name="BtnLeft" type="TextureButton" parent="ControleContainer/ControleBase" unique_id=613471923]
+texture_filter = 1
+offset_left = 40.5
+offset_top = 56.5
+offset_right = 80.5
+offset_bottom = 96.5
+texture_normal = ExtResource("6_3oqeg")
+texture_pressed = ExtResource("13_2ypqp")
+metadata/_edit_use_anchors_ = true
+
+[node name="BtnRight" type="TextureButton" parent="ControleContainer/ControleBase" unique_id=1457880628]
+texture_filter = 1
+offset_left = 117.0
+offset_top = 54.0
+offset_right = 157.0
+offset_bottom = 94.0
+texture_normal = ExtResource("4_t10ng")
+texture_pressed = ExtResource("15_q67nr")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="." unique_id=2108801501]
+offset_left = 139.0
+offset_top = 110.0
+offset_right = 502.0
+offset_bottom = 159.0
+theme_override_fonts/font = ExtResource("18_q67nr")
+text = "Clique nas setas corretas no controle conforme a ordem mostrada..."
+horizontal_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1251828426]
+
+[node name="DialogBox" parent="UI" unique_id=386614837 instance=ExtResource("18_abqud")]
+visible = false
+
+[node name="HUD" parent="UI" unique_id=523628254 instance=ExtResource("19_c8mds")]
+
+[node name="Notebook" parent="UI" unique_id=287675510 instance=ExtResource("20_gli58")]
+visible = false
